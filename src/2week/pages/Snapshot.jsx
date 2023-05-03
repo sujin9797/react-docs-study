@@ -8,9 +8,12 @@ export default function Snapshot() {
       <h1>{number}</h1>
       <button
         onClick={() => {
-          setNumber(number + 1);
-          setNumber(number + 1);
-          setNumber(number + 1);
+          setNumber((prevNumber) => prevNumber + 1);
+          setNumber((prevNumber) => prevNumber + 1);
+          setNumber((prevNumber) => prevNumber + 1);
+          // setNumber(number + 1);
+          // setNumber(number + 1);
+          // setNumber(number + 1);
         }}
       >
         +3
